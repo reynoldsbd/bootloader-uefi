@@ -1,0 +1,8 @@
+[package]
+name = "bootloader-uefi"
+version = "0.1.0"
+authors = ["Bobby Reynolds <bobby@reynoldsbd.net>"]
+
+[dependencies]
+efi = { path = "../../libefi" }
+xmas-elf = "0.6.2"
