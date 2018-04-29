@@ -7,13 +7,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 name = "bootloader-uefi"
 version = "0.1.0"
 dependencies = [
- "efi 0.1.0",
+ "efi 0.1.0 (git+https://github.com/reynoldsbd/libefi)",
  "xmas-elf 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "efi"
 version = "0.1.0"
+source = "git+https://github.com/reynoldsbd/libefi#da66191ef38d3a45c933374c494adcc8c01350ec"
 dependencies = [
  "bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rlibc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -39,6 +40,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum bitflags 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "b3c30d3802dfb7281680d6285f2ccdaa8c2d8fee41f93805dba5c4cf50dc23cf"
+"checksum efi 0.1.0 (git+https://github.com/reynoldsbd/libefi)" = "<none>"
 "checksum rlibc 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "fc874b127765f014d792f16763a81245ab80500e2ad921ed4ee9e82481ee08fe"
 "checksum xmas-elf 0.6.2 (registry+https://github.com/rust-lang/crates.io-index)" = "22678df5df766e8d1e5d609da69f0c3132d794edf6ab5e75e7abcd2270d4cf58"
 "checksum zero 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5f1bc8a6b2005884962297587045002d8cfb8dcec9db332f4ca216ddc5de82c5"

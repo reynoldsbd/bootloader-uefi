@@ -4,5 +4,5 @@ version = "0.1.0"
 authors = ["Bobby Reynolds <bobby@reynoldsbd.net>"]
 
 [dependencies]
-efi = { path = "../../libefi" }
+efi = { git = "https://github.com/reynoldsbd/libefi" }
 xmas-elf = "0.6.2"
